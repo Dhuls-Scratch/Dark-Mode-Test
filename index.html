@@ -3,7 +3,22 @@
     <head>
         <meta charset="utf-8">
         <title>Dark Mode Test</title>
-        <link href="style.css">
+        <style>@font-face {
+            font-family: "Lato";
+            src: url(/LATO-REGULAR.TTF);
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        @media (prefers-color-scheme: dark) {
+            body {background-color: black; color: white; font-family: "Lato", sans-serif;}
+        }
+        @media (prefers-color-scheme: light) {
+            body {background-color: white; color: black; font-family: "Lato", sans-serif;}
+        }</style>>
     </head>
     <body>
         <h1>Heading 1</h1>
